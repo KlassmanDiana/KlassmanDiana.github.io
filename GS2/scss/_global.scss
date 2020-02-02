@@ -1,0 +1,246 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: #171919;
+    color: #171919;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.suptext-left {
+    margin-bottom: 8px;
+}
+.headline-left, .suptext-left {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-left: 103px;  
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    &::before {
+        content: "";
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }  
+}
+.headline-right{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-right: 103px;  
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    &::before {
+        content: "";
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }  
+}
+
+.slider-item__info-text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.title {
+    position: relative;
+    span {
+        position: relative;
+        font-weight: 800;
+        font-size: 200px;
+        color: rgba( #0fff, .02);
+        display: inline-block;
+        transform: translateX(-50px);
+        
+    }
+    h3 {
+        margin: 0;
+        color: #FFFFFF;
+        font-size: 80px;
+        position: absolute;
+        top: 0px;
+        left: 280px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 80px;
+            height: 2px;
+            background-color: $green;
+        }
+
+    }
+}
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head {
+        color:#FFFFFF;
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 300;
+        }
+    }
+}
+.descr{
+    display: inline-block;
+    &__head {
+        color:#FFFFFF;
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 300;
+        }
+    }
+}
+
+.btn-box .btn, .btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    color: #fff;
+    span {
+        padding: 17px 57px 15px 17px;
+        background-color: $green;
+        display: inline-block;
+        margin-left: 19px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url(../img/arrows-right.svg);
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%)
+        }
+    }
+}
+.serf,
+.sleep,
+.holder,
+.shop{
+    padding: 130px 0 160px;
+}
+.holder{
+    padding-bottom: 265px;
+}
+
+.quantity {
+    display: inline-block;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    color: #fff;
+    width: 40px;
+    height: 42px;
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: static;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    right: 0px;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    right: 25px;
+  }
+
+  .star-list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: -25px;
+        }
+    }
+  }
